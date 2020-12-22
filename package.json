@@ -1,0 +1,16 @@
+{
+	"name": "shopping-cart",
+	"version": "1.0.0",
+	"devDependencies": {
+		"babel-core": "6.26.0",
+		"babel-loader": "7.1.2",
+		"babel-preset-env": "1.6.1",
+		"rimraf": "2.6.2",
+		"webpack": "3.10.0"
+	},
+	"private": true,
+	"scripts": {
+		"clean": "rimraf dist",
+		"build": "set NODE_ENV=production && npm run clean && webpack -p"
+	}
+}

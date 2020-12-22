@@ -1,0 +1,263 @@
+* {
+	box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .one {
+	float: left;
+	width: 70%;
+	padding: 10px;
+	height: 300px; /* Should be removed. Only for demonstration */
+	
+  }
+  
+  .two {
+	float: left;
+	width: 30%;
+	padding: 10px;
+	height: 300px; /* Should be removed. Only for demonstration */
+	background-color: #FFF;
+	margin-top: 26px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.one {
+	  width: 100%;
+	}
+	.two {
+	  width: 100%;
+	}
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Lato:400,900);  /* <-- Just for the demo, Yes I like pretty fonts... */
+
+.square {
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom : 26%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-color:#FFF;
+    overflow:hidden;
+}
+
+.content {
+    position:absolute;
+    height:auto; /* = 100% - 2*5% padding */
+    width:100%; /* = 100% - 2*5% padding */
+    
+    
+}
+
+.inner-content {
+	padding: 5% 10% 5% 0;
+}
+.table{
+    display:table;
+    width:100%;
+    height:100%;
+}
+.table-cell{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.content .rs{
+	width: 44%;
+    height: 28%;
+    max-height:90%;
+    max-width:100%;
+}
+
+body {
+    font-size:20px;
+    font-family: verdana, sans-serif;
+    text-align:center;
+    background:#ECECEC;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+
+
+
+
+
+.title {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  color: #5E6977;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.buttons {
+  position: relative;
+}
+
+.delete-btn {
+  display: inline-block;
+  cursor: pointer;
+  width: 18px;
+  height: 17px;
+  background: url("./img/delete-icn.svg") no-repeat center;
+}
+
+.imgClass {
+  width: 24px;
+  height: 24px;
+}
+
+.description {
+  width: 115px;
+}
+
+.description span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.description span:last-child {
+  font-weight: 300;
+}
+
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+}
+.plus-btn img {
+  margin-top: 2px;
+}
+button:focus,
+input:focus {
+  outline:0;
+}
+
+/* Total Price */
+.total-price {
+  width: 83px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .shopping-cart {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .item {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .image img {
+    width: 50%;
+  }
+  .image,
+  .quantity,
+  .description {
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+  }
+  .buttons {
+    margin-right: 20px;
+  }
+
+}
+
+.cart-table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.cart-table td, .cart-table th{
+	word-break: break-word;
+    min-width: 50px;
+}
+
+.discount-ribbon {
+	background-color: forestgreen;
+  white-space: nowrap;
+  font-size: 14px;
+  padding: 8px;
+  color: #FFF;
+}
+
+.ribbon {
+	vertical-align: -webkit-baseline-middle !important;
+}
+
+.lower-cell {
+	height: 50px;
+	background-color: lightgray;
+}
+
+.add-cart {
+	border: 1px solid blue;
+	color: blue;
+	float: right;
+    margin-right: 10px;
+}
+
+.cart {
+	font-size: 14px;
+	color: #000;
+}
+
+.header {
+	font-weight: 400;
+	float: left;
+}
+
+.header-title {
+	color: #FFF;
+	background-color: forestgreen;
+	padding: 8px;
+}
+
+.main-div {
+	text-align: center;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
